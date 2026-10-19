@@ -1,0 +1,32 @@
+{
+  "status": "PROOF_CANDIDATE_FINITE_DATA_VERIFIED",
+  "interval_cells": 320,
+  "right_interval": "constant on [17/64,1]",
+  "joins": [
+    {
+      "point": "1/4",
+      "orders_0_to_3_match": true
+    },
+    {
+      "point": "17/64",
+      "orders_0_to_3_match": true
+    }
+  ],
+  "M2_upper_integer": 1016,
+  "M3_upper_integer": 459410,
+  "A": 920854,
+  "s": 246,
+  "n0": 60516,
+  "L_f_upper_rational": "4323192/41",
+  "L_f_upper_display_only": 105443.70731707317,
+  "g_range": "[3/8,7/8], analytic monotonicity argument",
+  "full_factory_executed": "see pilot logs, not this verifier",
+  "operational_auditor_executed": "see pilot logs",
+  "levels": "m_j=60516*4**j for every j>=0",
+  "survival_g": "2*A/(m_j*sqrt(m_j))",
+  "conditional_continuation": "1/8",
+  "coefficient_range": "[1/4,1]",
+  "expected_CPU_finite": "NOT_ESTABLISHED",
+  "analytic_proof": "RESULT.md sections 2-4",
+  "offline_seconds": 0.8630328997969627
+}

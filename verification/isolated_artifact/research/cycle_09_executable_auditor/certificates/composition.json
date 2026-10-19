@@ -1,0 +1,20 @@
+{
+  "status": "PROOF_CANDIDATE",
+  "factory_function": "exact C7 f=B8*g",
+  "L_run": "4323192/41",
+  "ell": "52467170135279/200000000000",
+  "U": "262335850819/1000000000",
+  "delta": "28521/200000000000",
+  "two_L_U": "141766031446736781/2562500000",
+  "risk_per_world": "<=1/20",
+  "domain": "entire Theta_n of C7, n positive multiple of 64",
+  "cost_bound": "sup_Theta E[lambda*N_L+N_M] - C_O,n <= delta + lambda*min(n,2*L_run*U)",
+  "policies_covered": [
+    "factory_only",
+    "cache_shortcut"
+  ],
+  "buy_all_bound": "delta + lambda*n",
+  "expected_CPU_finite": "NOT_ESTABLISHED",
+  "proof": "RESULT.md sections 2-6",
+  "epsilon_requested": "1/1000000"
+}

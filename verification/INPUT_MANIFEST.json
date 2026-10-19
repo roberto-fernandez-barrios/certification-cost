@@ -1,0 +1,42 @@
+{
+  "isolated_artifact/artifacts/development/cycle_08_scalar_closure/run_001/dual_lower.json": {
+    "source": "artifacts/development/cycle_08_scalar_closure/run_001/dual_lower.json",
+    "sha256": "5825f7db498e1bd4608dcec96c5c06d6060241e93ff84d8012498be7bcfa27fd"
+  },
+  "isolated_artifact/artifacts/development/cycle_08_scalar_closure/run_001/mixture_certificate.json": {
+    "source": "artifacts/development/cycle_08_scalar_closure/run_001/mixture_certificate.json",
+    "sha256": "c74195d1752422994e0128ba538727b89ace8d1148d4d7d9b486f52ca16425df"
+  },
+  "isolated_artifact/artifacts/development/cycle_08_scalar_closure/run_001/box_certificate_full.json": {
+    "source": "artifacts/development/cycle_08_scalar_closure/run_001/box_certificate_full.json",
+    "sha256": "f60d601dd3c20f8e7caec76c7b4813b201eea033e109305e318e2841366367af"
+  },
+  "isolated_artifact/artifacts/development/cycle_08_scalar_closure/run_001/dual_localization.json": {
+    "source": "artifacts/development/cycle_08_scalar_closure/run_001/dual_localization.json",
+    "sha256": "f63985dde5b461f7a514828d7732ae3dbc482b2437ea77b8b5d32a13b8e6a84a"
+  },
+  "isolated_artifact/artifacts/development/cycle_08_scalar_closure/run_001/bellman_localization.json": {
+    "source": "artifacts/development/cycle_08_scalar_closure/run_001/bellman_localization.json",
+    "sha256": "77337f9962bde21925d19a503c68cf6c9dabfe48b2e502de7f3db489a53aa609"
+  },
+  "isolated_artifact/research/cycle_09_executable_auditor/certificates/scalar_1e6.json": {
+    "source": "research/cycle_09_executable_auditor/certificates/scalar_1e6.json",
+    "sha256": "5cea076c207e2449ad8a30743776ec5d4b83ffce9be2a424357964ab5bd05984"
+  },
+  "independent_checks.py": {
+    "source": "audits/scientific_paper_audit_2026-10-16/independent_checks.py",
+    "sha256": "4dbff48404e8b10201bdcf9d87ac73b6188fea6ed33b06641696878442f249d9"
+  },
+  "independent_factory.py": {
+    "source": "audits/scientific_paper_audit_2026-10-16/independent_factory.py",
+    "sha256": "c031d55531cd0916cc49dca1bdd7d4519028ed3e6485f9d12756bcde737c928f"
+  },
+  "isolated_artifact/research/cycle_09_executable_auditor/certificates/factory.json": {
+    "source": "audits/scientific_paper_audit_2026-10-16/isolated_artifact/research/cycle_09_executable_auditor/certificates/factory.json",
+    "sha256": "76c4f841be5c0f05a4cb092adcd9e2d9541cd5493190d8dbfebacd50d320374d"
+  },
+  "isolated_artifact/research/cycle_09_executable_auditor/certificates/composition.json": {
+    "source": "audits/scientific_paper_audit_2026-10-16/isolated_artifact/research/cycle_09_executable_auditor/certificates/composition.json",
+    "sha256": "782c0d223b28803af7c8d7b536a17ed5c24a1386e35116968755ed2c8bec86b5"
+  }
+}

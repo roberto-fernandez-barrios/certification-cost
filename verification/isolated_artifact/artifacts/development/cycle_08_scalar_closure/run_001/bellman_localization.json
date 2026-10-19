@@ -1,0 +1,61 @@
+{
+  "parameter_rectangle": [
+    [
+      "581637/1000",
+      "581647/1000"
+    ],
+    [
+      "468847/250",
+      "375079/200"
+    ]
+  ],
+  "horizon": 6000,
+  "scale": 1000000000000,
+  "probes": [
+    {
+      "name": "stop0",
+      "x": "167/3125",
+      "u": "581637/1000",
+      "v": "375079/200",
+      "rounding": "DOWN_FREE_TERMINAL",
+      "continuation_bound": "100224049887173/1000000000000",
+      "terminal": "62638193/625000",
+      "strict_margin": "2941087173/1000000000000",
+      "strict": true
+    },
+    {
+      "name": "continue_low",
+      "x": "5351/100000",
+      "u": "581647/1000",
+      "v": "468847/250",
+      "rounding": "UP_REAL_TERMINAL",
+      "continuation_bound": "100350758345351/1000000000000",
+      "terminal": "2508800297/25000000",
+      "strict_margin": "1253534649/1000000000000",
+      "strict": true
+    },
+    {
+      "name": "continue_high",
+      "x": "15027/1000",
+      "u": "581637/1000",
+      "v": "375079/200",
+      "rounding": "UP_REAL_TERMINAL",
+      "continuation_bound": "581613061522269/1000000000000",
+      "terminal": "581637/1000",
+      "strict_margin": "23938477731/1000000000000",
+      "strict": true
+    },
+    {
+      "name": "stop1",
+      "x": "15059/1000",
+      "u": "581647/1000",
+      "v": "468847/250",
+      "rounding": "DOWN_FREE_TERMINAL",
+      "continuation_bound": "581685307162589/1000000000000",
+      "terminal": "581647/1000",
+      "strict_margin": "38307162589/1000000000000",
+      "strict": true
+    }
+  ],
+  "all_strict": true
+}

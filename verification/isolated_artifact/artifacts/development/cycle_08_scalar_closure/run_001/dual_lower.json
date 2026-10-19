@@ -1,0 +1,14 @@
+{
+  "horizon": 8000,
+  "scale": 1000000000000,
+  "u": "116329/200",
+  "v": "937697/500",
+  "penalized_lower": "77037560135279/200000000000",
+  "T_pair_lower": "52467170135279/200000000000",
+  "T_pair_lower_decimal_diagnostic": 262.335850676395,
+  "terminal_integer_entries": 505246,
+  "status": "FINITE_HORIZON_UNIVERSAL_LOWER_ONLY",
+  "equality_L_SC": "NOT_ESTABLISHED",
+  "optimal_policy": "NOT_COMPUTED",
+  "seconds": 3.664275700226426
+}
