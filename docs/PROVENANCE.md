@@ -24,7 +24,7 @@ These fingerprints let a recipient identify the accompanying files; they are not
 
 ## Archival software release
 
-Version 1.0.0 (21 October 2026) has software DOI [10.5281/zenodo.23529082](https://doi.org/10.5281/zenodo.23529082) and is distributed under the [MIT License](../LICENSE). The Zenodo record identifies the exact Git commit. Its ZIP contains only the tracked public repository files, including this documentation, the original certificates, and the checkers. It excludes Git internals, the manuscript, the supplement, historical reproduction materials, and private editorial records.
+Version 1.0.0 (21 October 2026) has software DOI [10.5281/zenodo.23529082](https://doi.org/10.5281/zenodo.23529082) and is distributed under the [MIT License](../LICENSE). The archived commit is [`a5921e59cd70d3865bbf48c96c9969bb3d0d240b`](https://github.com/roberto-fernandez-barrios/certification-cost/tree/a5921e59cd70d3865bbf48c96c9969bb3d0d240b), also identified in the Zenodo record. Its ZIP contains only the tracked public repository files, including this documentation, the original certificates, and the checkers. It excludes Git internals, the manuscript, the supplement, historical reproduction materials, and private editorial records.
 
 This licensing and archiving update changes no mathematical input or checker. The separately supplied manuscript fingerprints above remain unchanged. Any earlier availability statement describing the absence of a software licence or DOI records the position before this release.
 
