@@ -1,22 +1,55 @@
-# certification-cost
+# Certification Cost
 
-Deterministic verification code and essential certificates accompanying **The Price of Missing Labels in Certification with Unknown Readout**.
+**Verification companion for _The Price of Missing Labels in Certification with Unknown Readout_.**
 
-This is the minimal reproducibility edition of the project. It contains the existing checking scripts and eight certificate files, with exact input hashes and a proof-dependency map. It does not contain the manuscript, supplement, editorial correspondence, private administrative records, or the complete historical development tree.
+[![Deterministic verification](https://github.com/roberto-fernandez-barrios/certification-cost/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/roberto-fernandez-barrios/certification-cost/actions/workflows/verify.yml)
+[Reproduction guide](docs/REPRODUCIBILITY.md) · [Proof map](verification/PROOF_MAP.md) · [Scope](docs/SCOPE.md) · [Citation](CITATION.cff)
 
-## Reproduce the checks
+How much does acquiring missing labels add to certification cost when knowing every label still leaves the measurement channel unknown? The companion manuscript studies this question through a comparison of joint acquisition and label-oracle costs under the same error requirement in every permitted world.
 
-Python 3.13, standard library only:
+This repository provides the **five deterministic checks, eight exact certificates, and provenance records** supporting the manuscript's scalar and factory calculations. It requires Python 3.13 and its standard library. The analytical arguments are supplied in the manuscript; the executable checks verify their stated finite or symbolic ingredients.
 
-```text
-cd verification
-python -B -X utf8 reproduce.py --output ../verification_output
+**Authors:** [Roberto Fernández-Barrios](https://orcid.org/0009-0003-5312-2634), [Iker Pastor-López](https://orcid.org/0000-0002-3068-6248), [Rubén López De Juan](https://orcid.org/0009-0002-0445-9030), and [Pablo García Bringas](https://orcid.org/0000-0003-3594-9534). University of Deusto, Spain.
+
+## Quick start
+
+Clone the repository, or download and extract its ZIP from GitHub's **Code** menu. From the repository root, run:
+
+```sh
+python -B -X utf8 tools/verify_repository.py
+python -B -X utf8 verification/reproduce.py --output verification_output
 ```
 
-See [verification/README.md](verification/README.md) for expected outputs, environment, scope and limitations, and [PROOF_MAP.md](verification/PROOF_MAP.md) for the correspondence with the scientific arguments. These checks do not constitute formal verification of the complete theorem or software runtime. No experiments or simulations are launched.
+Use a **new output directory** for each run. On systems where Python 3.13 is named `python3`, use that executable instead. No package installation, solver, credentials, network access, or random experiment is required to run the checks.
 
-## Rights and contact
+A successful reproduction reports **five zero exit codes** and writes `verification_output/EXECUTION_RECORD.json` with `status: COMPLETED` and `input_files_unchanged: 10`, alongside five logs and five check reports. See the [guide](docs/REPRODUCIBILITY.md) for the individual checks, expected files, timing, and troubleshooting.
 
-Public distribution of this code and certificate package was authorized by the corresponding author. No software licence or DOI has been assigned. Public availability should not be described as an open-source licence.
+## Find the evidence
 
-Roberto Fernández-Barrios — roberto.fernandez.b@deusto.es.
+| Resource | Purpose |
+|---|---|
+| [Reproduction guide](docs/REPRODUCIBILITY.md) | Commands, environment, outputs, and continuous integration |
+| [Certificate-to-result map](verification/PROOF_MAP.md) | Each computational ingredient and its remaining analytical obligation |
+| [Input manifest](verification/INPUT_MANIFEST.json) | SHA-256 identities and provenance of the eight certificates and two checkers |
+| [Repository checksums](SHA256SUMS.txt) | Identities of the distributed files, checked by `tools/verify_repository.py` |
+| [Scope and manuscript alignment](docs/SCOPE.md) | Coverage, limitations, and the separately supplied historical material |
+| [Provenance](docs/PROVENANCE.md) | Original public snapshot and preservation of scientific inputs |
+| [Reporting a problem](CONTRIBUTING.md) | How to report a reproducibility issue with useful evidence |
+
+The workflow badge reports execution of the checks on Linux and Windows. It does not certify the full theorem, formal correctness, or the complete software runtime. The distinction between an exact existential optimum and the implemented rational mixture is preserved; the implementation tolerance concerns cost only. The work does not establish practical efficiency or quantum advantage.
+
+## Citation
+
+The companion manuscript is currently unpublished. Cite it without inventing a journal volume, DOI, or acceptance status:
+
+> R. Fernández-Barrios, I. Pastor-López, R. López De Juan, and P. García Bringas, “The Price of Missing Labels in Certification with Unknown Readout,” unpublished manuscript, 2026.
+
+[CITATION.cff](CITATION.cff) provides machine-readable metadata. When reporting a computational reproduction, also record the repository commit and retain `EXECUTION_RECORD.json` and its logs.
+
+## Availability and contact
+
+The manuscript, supplement, historical reproduction archive, and editorial material are supplied separately. This public repository contains the verification companion; [scope and alignment](docs/SCOPE.md) explains the boundary.
+
+No software licence or DOI has been assigned. Public availability is not a declaration of an open-source licence. The existing rights position is unchanged.
+
+Corresponding author: **Roberto Fernández-Barrios** — [roberto.fernandez.b@deusto.es](mailto:roberto.fernandez.b@deusto.es).

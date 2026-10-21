@@ -1,0 +1,53 @@
+name: Deterministic verification
+
+'on':
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verification-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Python 3.13 / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUTF8: '1'
+    steps:
+      - name: Check out the tested commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.13'
+      - name: Record Python version
+        run: python --version
+      - name: Verify distribution and scientific input identities
+        run: python -B -X utf8 tools/verify_repository.py
+      - name: Run all five original deterministic checks
+        run: python -B -X utf8 verification/reproduce.py --output verification_output
+      - name: Retain execution evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: verification-${{ matrix.os }}-${{ github.sha }}
+          path: |
+            verification_output/EXECUTION_RECORD.json
+            verification_output/*.log
+            verification_output/independent_*.json
+          if-no-files-found: warn
+          retention-days: 7

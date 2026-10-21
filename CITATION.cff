@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: Please cite the companion manuscript when using these verification materials,
+  and record the repository commit for computational reproductions.
+type: software
+title: 'Certification Cost: deterministic verification companion'
+authors:
+- family-names: Fernández-Barrios
+  given-names: Roberto
+  orcid: https://orcid.org/0009-0003-5312-2634
+- family-names: Pastor-López
+  given-names: Iker
+  orcid: https://orcid.org/0000-0002-3068-6248
+- family-names: López De Juan
+  given-names: Rubén
+  orcid: https://orcid.org/0009-0002-0445-9030
+- family-names: García Bringas
+  given-names: Pablo
+  orcid: https://orcid.org/0000-0003-3594-9534
+repository-code: https://github.com/roberto-fernandez-barrios/certification-cost
+url: https://github.com/roberto-fernandez-barrios/certification-cost
+abstract: Deterministic checks and preserved certificates supporting scalar and factory
+  calculations for certification with missing labels and unknown readout.
+keywords:
+- statistical certification
+- sequential testing
+- information theory
+- Bernoulli factories
+- reproducibility
+preferred-citation:
+  type: unpublished
+  title: The Price of Missing Labels in Certification with Unknown Readout
+  authors:
+  - family-names: Fernández-Barrios
+    given-names: Roberto
+    orcid: https://orcid.org/0009-0003-5312-2634
+  - family-names: Pastor-López
+    given-names: Iker
+    orcid: https://orcid.org/0000-0002-3068-6248
+  - family-names: López De Juan
+    given-names: Rubén
+    orcid: https://orcid.org/0009-0002-0445-9030
+  - family-names: García Bringas
+    given-names: Pablo
+    orcid: https://orcid.org/0000-0003-3594-9534
+  year: 2026
+  notes: Unpublished manuscript. The article and editorial materials are supplied
+    separately.

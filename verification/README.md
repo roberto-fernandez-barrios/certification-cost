@@ -1,5 +1,7 @@
 # Certification cost: deterministic verification package
 
+[Repository home](../README.md) · [Reproduction guide](../docs/REPRODUCIBILITY.md) · [Scope and alignment](../docs/SCOPE.md)
+
 Companion code and certificates for *The Price of Missing Labels in Certification with Unknown Readout*.
 
 The eight JSON certificates and two checking scripts are unchanged mathematical inputs. `INPUT_MANIFEST.json` identifies their SHA-256 digests and provenance. No historical datasets, manuscript, credentials, software environment, or experiment runner is included.

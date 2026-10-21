@@ -1,5 +1,7 @@
 # Certificate-to-result map
 
+[Repository home](../README.md) · [Reproduction guide](../docs/REPRODUCIBILITY.md) · [Scope and alignment](../docs/SCOPE.md)
+
 References below are to the accompanying article, whose essential proofs are in Appendices A–E. The manuscript is supplied separately for editorial review.
 
 | Obligation | Existing input / check | Required analytic argument |
@@ -17,5 +19,6 @@ References below are to the accompanying article, whose essential proofs are in 
 | Oracle and upper bound | Model, scalar optimum, transformation | C: fresh coin per measurement, predictable attainability, Tonelli, distinct labels. |
 | Cache variant | Same scalar mixture and selector | Supplement S1/H1: marked-law equality and freshness after internal stopping. |
 | Excess lower bound | Same nominal world and policy | D: universal measurement obligation, label coupling/incidence, add before optimizing and subtract the exact oracle. |
+| Hypergeometric refinement | No new dependency on the certificates in this repository | Proposition 1 and D-E: exact subset counting, decreasing increments, concave interpolation, Jensen, and the same nominal world. The separate arithmetic check is outside this public package. |
 
 The ten mathematical inputs retain their original bytes. Hashes identify these inputs; they do not establish mathematical correctness. This package runs no new experiments.
