@@ -32,6 +32,6 @@ Expected result: five exit codes of zero, an `EXECUTION_RECORD.json` with status
 
 ## Availability and rights
 
-The author authorized this code-and-certificate repository to be public on 19 October 2026. The same inputs accompany editorial review. Public access does not supply a new software licence: no open-source licence or DOI has been assigned in this package. The article, supplement, cover letter and private administrative archive are not distributed in this repository.
+The author authorized this code-and-certificate repository to be public on 19 October 2026 and authorized its MIT-licensed Zenodo deposit on 21 October 2026. The same scientific inputs accompany editorial review. The public companion is distributed under the [MIT License](../LICENSE), with [software DOI 10.5281/zenodo.23529082](https://doi.org/10.5281/zenodo.23529082). The article, supplement, cover letter and private administrative archive are not distributed in this repository.
 
 Contact: Roberto Fernández-Barrios, roberto.fernandez.b@deusto.es.

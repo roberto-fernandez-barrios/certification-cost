@@ -3,6 +3,8 @@
 **Verification companion for _The Price of Missing Labels in Certification with Unknown Readout_.**
 
 [![Deterministic verification](https://github.com/roberto-fernandez-barrios/certification-cost/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/roberto-fernandez-barrios/certification-cost/actions/workflows/verify.yml)
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23529082.svg)](https://doi.org/10.5281/zenodo.23529082)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [Reproduction guide](docs/REPRODUCIBILITY.md) · [Proof map](verification/PROOF_MAP.md) · [Scope](docs/SCOPE.md) · [Citation](CITATION.cff)
 
 How much does acquiring missing labels add to certification cost when knowing every label still leaves the measurement channel unknown? The companion manuscript studies this question through a comparison of joint acquisition and label-oracle costs under the same error requirement in every permitted world.
@@ -44,12 +46,14 @@ The companion manuscript is currently unpublished. Cite it without inventing a j
 
 > R. Fernández-Barrios, I. Pastor-López, R. López De Juan, and P. García Bringas, “The Price of Missing Labels in Certification with Unknown Readout,” unpublished manuscript, 2026.
 
-[CITATION.cff](CITATION.cff) provides machine-readable metadata. When reporting a computational reproduction, also record the repository commit and retain `EXECUTION_RECORD.json` and its logs.
+The software archive has its own citation: Fernández-Barrios, R., Pastor-López, I., López De Juan, R., and García Bringas, P. (2026). _Certification Cost: deterministic verification companion_ (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23529082.
+
+[CITATION.cff](CITATION.cff) distinguishes the software DOI from the unpublished companion manuscript. When reporting a computational reproduction, also record the repository commit and retain `EXECUTION_RECORD.json` and its logs.
 
 ## Availability and contact
 
 The manuscript, supplement, historical reproduction archive, and editorial material are supplied separately. This public repository contains the verification companion; [scope and alignment](docs/SCOPE.md) explains the boundary.
 
-No software licence or DOI has been assigned. Public availability is not a declaration of an open-source licence. The existing rights position is unchanged.
+The public code, certificates, and accompanying documentation are distributed under the [MIT License](LICENSE). Version 1.0.0 is identified by the [Zenodo software DOI](https://doi.org/10.5281/zenodo.23529082); this DOI identifies the verification companion, not the article. See [provenance](docs/PROVENANCE.md) for the archival boundary.
 
 Corresponding author: **Roberto Fernández-Barrios** — [roberto.fernandez.b@deusto.es](mailto:roberto.fernandez.b@deusto.es).

@@ -40,4 +40,4 @@ The manuscript and editorial materials are not published here. See [provenance](
 
 Hashes identify bytes relative to a manifest. They do not prove authenticity or mathematical truth. Finite checks verify their declared ingredients, not a general theorem by enumeration. The CI badge reports automated execution, not peer review, editorial acceptance, or formal proof verification.
 
-The companion manuscript is unpublished; this repository makes no claim of journal acceptance. No software licence or DOI has been assigned.
+The companion manuscript is unpublished; this repository makes no claim of journal acceptance. The public verification companion is licensed under [MIT](../LICENSE) and has a separate [software DOI](https://doi.org/10.5281/zenodo.23529082). This licence and DOI apply to the public companion, not to the separately supplied manuscript or private archives.

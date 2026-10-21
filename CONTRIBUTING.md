@@ -27,4 +27,4 @@ git diff --check
 
 Documentation changes require a corresponding update of the distribution checksum manifest. The scientific input manifest stays unchanged unless a separately justified scientific revision is accepted. Existing input files retain their original line endings.
 
-No software licence has been assigned. This document does not change that rights position or imply a contribution licence agreement.
+The public code and accompanying materials are distributed under the [MIT License](LICENSE). Proposed contributions must be compatible with that licence. This document is not a separate contribution licence agreement.
